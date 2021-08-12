@@ -19,6 +19,6 @@ var baseDatos = [];
 function agregar(){
     baseDatos.push(nuevoSujeto);
     
-    $('#table').append('<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>');
+    $('#table').append(`<tbody><td>${nuevoSujeto.nombre}</td><td>${nuevoSujeto.edad}</td></tbody>`);
     // document.getElementById('table').innerHTML += '<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>';
 };
