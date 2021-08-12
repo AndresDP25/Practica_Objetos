@@ -18,7 +18,13 @@ function capturar(){
 var baseDatos = [];
 function agregar(){
     baseDatos.push(nuevoSujeto);
-    
-    $('#table').append(`<tbody><td>${nuevoSujeto.nombre}</td><td>${nuevoSujeto.edad}</td></tbody>`);
-    // document.getElementById('table').innerHTML += '<tbody><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>';
+    let texto = `<tbody  id="body"><td>${nuevoSujeto.nombre}</td><td>${nuevoSujeto.edad}</td></tbody>`;
+    $('#table').append(texto);
+    // document.getElementById('table').innerHTML += '<tbody  id="body"><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>';
+};
+
+function borrar(){
+    // console.log('borrar');
+    $('#body').html('');
+    baseDatos = [];
 };
