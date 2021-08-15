@@ -18,7 +18,7 @@ function capturar(){
 var baseDatos = [];
 function agregar(){
     baseDatos.push(nuevoSujeto);
-    let texto = `<tbody  id="body"><td>${nuevoSujeto.nombre}</td><td>${nuevoSujeto.edad}</td></tbody>`;
+    let texto = `<tbody  id="body" class="bg-info text-black"><td>${nuevoSujeto.nombre}</td><td>${nuevoSujeto.edad}</td></tbody>`;
     $('#table').append(texto);
     // document.getElementById('table').innerHTML += '<tbody  id="body"><td>'+nuevoSujeto.nombre+'</td><td>'+nuevoSujeto.edad+'</td></tbody>';
 };
